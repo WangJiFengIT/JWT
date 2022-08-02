@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT", "JWT\JWT.csproj", "{599B4B4F-F73D-4627-9752-2D73E7161564}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{1874066D-2EC6-4954-AD01-158860A5BCC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{599B4B4F-F73D-4627-9752-2D73E7161564}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{599B4B4F-F73D-4627-9752-2D73E7161564}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{599B4B4F-F73D-4627-9752-2D73E7161564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1874066D-2EC6-4954-AD01-158860A5BCC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1874066D-2EC6-4954-AD01-158860A5BCC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1874066D-2EC6-4954-AD01-158860A5BCC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1874066D-2EC6-4954-AD01-158860A5BCC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
