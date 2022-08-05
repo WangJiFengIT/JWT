@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using WebApi.Services;
 using WebApi.Util;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(new JwtHelper(configuration));
-
+//注册读写分离的服务
+builder.Services.Configure<DBConnectionOption>(builder.Configuration.GetSection("ConnectionStrings"));//注入多个链接
+builder.Services.AddTransient<DbContext, DBContext>();
 // 注册服务
 builder.Services.AddAuthentication(options =>
 {
